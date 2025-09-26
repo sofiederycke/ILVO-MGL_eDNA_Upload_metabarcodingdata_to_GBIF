@@ -6,7 +6,7 @@ The script can be used for eDNA metabarcoding data generated using the DADA2 pip
 This script allows you to create the dataset file, in excel format, needed to upload eDNA metabarcoding data into the Metabarcoding Data Toolkit (MDT) (https://mdt.gbif.org) to publish DNA metabarcoding data to the Global Biodiversity Information Facility (GBIF).\
 The template file, in excel format, consists of 4 sheets:
 * Sheet1 = OTU_table\
-Contains the OTU or ASV (OUT/ASV) table, in which each row must represent a unique OTU/ASV, and each column must represent a different sample or site, with the cell values indicating the count of sequencing reads of the OTUs/ASVs in each sample. The OTU/ASV table will be linked to two other tables:\
+Contains the OTU or ASV (OTU/ASV) table, in which each row must represent a unique OTU/ASV, and each column must represent a different sample or site, with the cell values indicating the count of sequencing reads of the OTUs/ASVs in each sample. The OTU/ASV table will be linked to two other tables:\
 &emsp; - table Taxonomy through the column id, containing the OTU/ASV names\
 &emsp; - table Samples through the column id, containing the colnames of the OTU/ASV table
 * Sheet2 = Taxonomy\
@@ -51,6 +51,7 @@ First a list is created in which all four tables are saved under the correct MDT
 
 ## Upload to GBIF
 Use the created template file to upload the eDNA metabarcoding data to https://edna-tool.gbif-uat.org/. More information about uploading the data can be found on: https://docs.gbif-uat.org/edna-tool-guide/en
+
 
 
 
