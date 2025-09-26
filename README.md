@@ -1,4 +1,4 @@
-# eDNA_metabarcoding_Upload-to-GBIF
+# eDNA_Upload_metabarcodingdata_to_GBIF
 
 ## Description
 The script can be used for eDNA metabarcoding data generated using the DADA2 pipeline (Callahan et al., 2016) from v.1.20.0 onwards. Taxonomic assignment has been done using an in-house RScript, combining the results from the taxonomic assignment using the RDP classifier in DADA2 (bootstrap min 80) and BLASTn against a custom reference database, and BLASTn against the nucleotide collection from the National Center for Biotechnology Information (NCBI). The demultiplexed and trimmed sequencing data and sample metadata are uploaded onto the Sequence Read Archive (SRA) using the MIMARKS template for Biosample registration.
@@ -51,6 +51,7 @@ First a list is created in which all four tables are saved under the correct MDT
 
 ## Upload to GBIF
 Use the created template file to upload the eDNA metabarcoding data to https://edna-tool.gbif-uat.org/. More information about uploading the data can be found on: https://docs.gbif-uat.org/edna-tool-guide/en
+
 
 
 
